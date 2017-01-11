@@ -1,0 +1,9 @@
+hooked actions:
+-	wp_head
+
+custom filters:
+-	medusa/header/content_elements
+	header content elements ( title, metas, links, etc )
+
+Notes
+-	@NOTE: adding custom elements to head
