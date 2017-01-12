@@ -1,9 +1,38 @@
 hooked actions:
+-	medusa/header
+	=	medusa_header_elements
+
 -	wp_head
+	=	array( $header, 'print_elements' )
+
+-	wp_enqueue_scripts
+	=	array( $scripts, 'print_styles' )
+
+
+hooked filters:
+
+
+
+
+custom actions:
+-	medusa/header
+	header object before hooking into anything
+
+-	medusa/scripts
+	scripts object before hooking into anything
+
 
 custom filters:
 -	medusa/header/content_elements
 	header content elements ( title, metas, links, etc )
 
-Notes
--	@NOTE: adding custom elements to head
+-	medusa/styles/use_parent_styles
+	whether to use main parent themes style or not
+
+-	medusa/scripts/styles
+	styles content elements ( title, metas, links, etc )
+
+
+
+@TODO:
+-	add js scripts

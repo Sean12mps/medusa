@@ -38,6 +38,7 @@ class Medusa_Header {
 
 		$this->_header = array_merge( $before, $this->_header, $after );
 
+
 	}
 
 
@@ -45,15 +46,19 @@ class Medusa_Header {
 
 		$output = '';
 
-		foreach ( $arr as $value ) {
+		if ( $arr ) {
 
-			$name		= $value['name'];
+			foreach ( $arr as $value ) {
 
-			$attr		= ( isset( $value['attr'] ) ? $value['attr'] : false );
+				$name		= $value['name'];
 
-			$content	= ( isset( $value['content'] ) ? $value['content'] : false );
+				$attr		= ( isset( $value['attr'] ) ? $value['attr'] : false );
 
-			$output .= $this->create_tag( $name, $attr, $content ) . "\n";
+				$content	= ( isset( $value['content'] ) ? $value['content'] : false );
+
+				$output .= $this->create_tag( $name, $attr, $content ) . "\n";
+
+			}
 
 		}
 
