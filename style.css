@@ -34,7 +34,7 @@
 /* =Preloader
 --------------------------------------------------------------------------------------------------------*/
 #preloader { position:absolute; top:0; left:0; right:0; bottom:0; background-color:#000; z-index:199; }
-#status { width:200px; height:200px; position:absolute; left:50%; top:50%; background-image:url(../images/ajax-loader.gif); background-repeat:no-repeat; background-position:center; margin:-100px 0 0 -100px; }
+#status { width:200px; height:200px; position:absolute; left:50%; top:50%; background-image:url(assets/local/img/ajax-loader.gif); background-repeat:no-repeat; background-position:center; margin:-100px 0 0 -100px; }
 /* End Preloader
 --------------------------------------------------------------------------------------------------------*/
 
@@ -70,7 +70,7 @@ span.arrow {font:13px 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-seri
 /* =Headings
 --------------------------------------------------------------------------------------------------------*/
 h1#logo { position:relative; float:left; padding:35px; z-index:1; border-right:1px solid #ccc; }
-h1#logo a { display:block; background:url(../images/bg-logo.png) no-repeat; background-size:100px 56px; width:100px; height:56px; text-indent:-9999px; }
+h1#logo a { display:block; background:url(assets/local/img/bg-logo.png) no-repeat; background-size:100px 56px; width:100px; height:56px; text-indent:-9999px; }
 h2, h3, h4, h2 a, h3 a, h4 a { line-height:1; font-weight:700; color:#2b2b2b; display:block font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; text-transform:uppercase }
 h2 a:hover, h3 a:hover, h4 a:hover { color:#2b2b2b; }
 h2 { font-size:48px; padding-bottom:9px; padding-top:16px; letter-spacing:-1px; }
@@ -161,28 +161,28 @@ ul#container li.col2-3 {width:620px; height:auto; margin:10px; }
 .tabs span {padding:4px 0 0 13px; display:inline-block }
 .tabs a.last {border:0; }
 .icons { position:relative; height:30px; width:30px; z-index:10; float:left }
-.email {background:url(../images/bg-email.png) center center no-repeat; background-size:24px 16px; }
-.xing {background:url(../images/bg-xing.png) center no-repeat; background-size:24px 24px; }
-.google {background:url(../images/bg-googleplus.png) center no-repeat; background-size:24px 24px; }
-.twitter, .tweat {background:url(../images/bg-twitter.png) center no-repeat; background-size:24px 24px; }
-.facebook {background:url(../images/bg-facebook.png) center no-repeat; background-size:24px 24px; }
-.pinterest {background:url(../images/bg-pinterest.png) center no-repeat; background-size:24px 24px; }
-.instagram {background:url(../images/bg-instagram.png) center no-repeat; background-size:24px 24px; }
-.vimeo {background:url(../images/bg-vimeo.png) center no-repeat; background-size:24px 24px; }
-.skype {background:url(../images/bg-skype.png) center no-repeat; background-size:24px 24px; }
-.dribble {background:url(../images/bg-dribble.png) center no-repeat; background-size:24px 24px; }
-.link {background:url(../images/bg-link.png) center no-repeat; background-size:24px 24px; }
-.bubble {background:url(../images/bg-bubble.png) center no-repeat; background-size:24px 24px; }
-.zoom {background:url(../images/bg-zoom.png) center no-repeat; background-size:25px 25px; }
-.file {background:url(../images/bg-file.png) center no-repeat; background-size:24px 24px; }
-.video {background:url(../images/bg-video.png) center no-repeat; background-size:24px 24px; }
-.like {background:url(../images/bg-like.png) center no-repeat; background-size:24px 22px; }
-.comment {background:url(../images/bg-comment.png) center no-repeat; background-size:25px 18px; }
-.close {background:url(../images/bg-close.png) center no-repeat; background-size:18px 18px; }
+.email {background:url(assets/local/img/bg-email.png) center center no-repeat; background-size:24px 16px; }
+.xing {background:url(assets/local/img/bg-xing.png) center no-repeat; background-size:24px 24px; }
+.google {background:url(assets/local/img/bg-googleplus.png) center no-repeat; background-size:24px 24px; }
+.twitter, .tweat {background:url(assets/local/img/bg-twitter.png) center no-repeat; background-size:24px 24px; }
+.facebook {background:url(assets/local/img/bg-facebook.png) center no-repeat; background-size:24px 24px; }
+.pinterest {background:url(assets/local/img/bg-pinterest.png) center no-repeat; background-size:24px 24px; }
+.instagram {background:url(assets/local/img/bg-instagram.png) center no-repeat; background-size:24px 24px; }
+.vimeo {background:url(assets/local/img/bg-vimeo.png) center no-repeat; background-size:24px 24px; }
+.skype {background:url(assets/local/img/bg-skype.png) center no-repeat; background-size:24px 24px; }
+.dribble {background:url(assets/local/img/bg-dribble.png) center no-repeat; background-size:24px 24px; }
+.link {background:url(assets/local/img/bg-link.png) center no-repeat; background-size:24px 24px; }
+.bubble {background:url(assets/local/img/bg-bubble.png) center no-repeat; background-size:24px 24px; }
+.zoom {background:url(assets/local/img/bg-zoom.png) center no-repeat; background-size:25px 25px; }
+.file {background:url(assets/local/img/bg-file.png) center no-repeat; background-size:24px 24px; }
+.video {background:url(assets/local/img/bg-video.png) center no-repeat; background-size:24px 24px; }
+.like {background:url(assets/local/img/bg-like.png) center no-repeat; background-size:24px 22px; }
+.comment {background:url(assets/local/img/bg-comment.png) center no-repeat; background-size:25px 18px; }
+.close {background:url(assets/local/img/bg-close.png) center no-repeat; background-size:18px 18px; }
 
-.cart-in a {background:url(../images/bg-cart_in.png) 15px center no-repeat #fff; background-size:26px 24px; padding-left:48px; }
-.cart-out a {background:url(../images/bg-cart_out.png) 15px center no-repeat #fff; background-size:26px 25px; padding-left:48px; }
-.book-me a {background:url(../images/bg-book_me.png) 15px center no-repeat #fff; background-size:22px 18px; padding-left:48px; }
+.cart-in a {background:url(assets/local/img/bg-cart_in.png) 15px center no-repeat #fff; background-size:26px 24px; padding-left:48px; }
+.cart-out a {background:url(assets/local/img/bg-cart_out.png) 15px center no-repeat #fff; background-size:26px 25px; padding-left:48px; }
+.book-me a {background:url(assets/local/img/bg-book_me.png) 15px center no-repeat #fff; background-size:22px 18px; padding-left:48px; }
 
 .images .title, .images .subtitle { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; position:absolute; top:35px; left:0px !important; width:auto; font-weight:600; cursor:pointer; margin-left:-500px }
 .images .subtitle { top: 68px; font-weight: 400; margin-left:600px }
@@ -204,8 +204,8 @@ ul#container li.col2-3 {width:620px; height:auto; margin:10px; }
 .single-work body, html.single-work { height: 100%; padding: 0; margin: 0; }
 .single-work .flexslider{ display: block; position: fixed; height: 100%!important; overflow: hidden!important; width: 100%!important; }
 
-.single-work .pic1 {background:url(../images/slide01.jpg) fixed no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; position:relative; display:block; height:1148px; width:1742px; }
-.single-work .pic2 {background:url(../images/slide02.jpg) fixed no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; position:relative; display:block; height:1155px; width:1732px; }
+.single-work .pic1 {background:url(assets/local/img/slide01.jpg) fixed no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; position:relative; display:block; height:1148px; width:1742px; }
+.single-work .pic2 {background:url(assets/local/img/slide02.jpg) fixed no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; position:relative; display:block; height:1155px; width:1732px; }
 .single-work .slide { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; -moz-opacity: 0.9; -khtml-opacity: 0.9; opacity: 0.9; }
 
 .more-info {display:block; position:absolute; top:35px; right:35px; }
@@ -227,7 +227,7 @@ p.comments {text-transform:none; }
 /* =Lists
 --------------------------------------------------------------------------------------------------------*/
 ul.unordered-list { list-style: disc; line-height:1.5; padding:10px 0px 0 0px; margin-left:18px; text-align:left !important; }
-ul.unordered-list.check li { background:url(../images/bg-check.png) no-repeat 1px 13px; background-size:13px 11px; }
+ul.unordered-list.check li { background:url(assets/local/img/bg-check.png) no-repeat 1px 13px; background-size:13px 11px; }
 ol.ordered-list { list-style: decimal; line-height:1.5; padding:10px 0px 0 0px; margin-left:18px; text-align:left !important; }
 ul.unordered-list.floated li {float:left; margin-right:40px; }
 /* =End Lists
@@ -291,7 +291,7 @@ ul.social a {text-indent:-9000px; text-decoration:none; height:24px; width:24px;
 --------------------------------------------------------------------------------------------------------*/
 #backtotop { height:auto; position:fixed; right:35px; bottom:83px; display:none; z-index:30; }
 #backtotop ul { }
-#backtotop ul li a { background:url(../images/bg-up.png) center 48% no-repeat #fff; background-size:22px 15px; display:block; width:50px; height:50px; text-indent:-9000px; -webkit-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); -moz-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); box-shadow:0 0 1px rgba(0, 0, 0, 0.5);}
+#backtotop ul li a { background:url(assets/local/img/bg-up.png) center 48% no-repeat #fff; background-size:22px 15px; display:block; width:50px; height:50px; text-indent:-9000px; -webkit-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); -moz-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); box-shadow:0 0 1px rgba(0, 0, 0, 0.5);}
 #backtotop ul li a:hover { }
 /* End Backtotop
 --------------------------------------------------------------------------------------------------------*/
@@ -301,7 +301,7 @@ ul.social a {text-indent:-9000px; text-decoration:none; height:24px; width:24px;
 --------------------------------------------------------------------------------------------------------*/
 #shop-link { height:auto; position:fixed; right:35px; bottom:136px; display:block; z-index:30; }
 #shop-link ul { overflow:hidden }
-#shop-link ul li a { background:url(../images/bg-shopping_cart.png) 13px 50% no-repeat #fff; background-size:26px 23px; display:block; width:50px; height:50px; -webkit-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); -moz-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); box-shadow:0 0 1px rgba(0, 0, 0, 0.5);}
+#shop-link ul li a { background:url(assets/local/img/bg-shopping_cart.png) 13px 50% no-repeat #fff; background-size:26px 23px; display:block; width:50px; height:50px; -webkit-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); -moz-box-shadow:0 0 1px rgba(0, 0, 0, 0.5); box-shadow:0 0 1px rgba(0, 0, 0, 0.5);}
 #shop-link ul li a span {padding-left:50px; width:auto; padding-top:15px; display:inline-block; color:#2b2b2b; white-space:nowrap }
 /* End Shop-Link
 --------------------------------------------------------------------------------------------------------*/

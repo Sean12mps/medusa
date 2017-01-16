@@ -35,6 +35,18 @@ class Medusa_Scripts {
 
 	}
 
+	public function add_script( $handle, $src = false, $deps = false, $ver = false, $in_footer = false ) {
+
+		$this->scripts[] = array(
+			'handle'		=> $handle,
+			'src'			=> $src,
+			'deps'			=> $deps,
+			'ver'			=> $ver,
+			'in_footer'		=> $in_footer,
+		);
+
+	}
+
 
 	public function print_styles() {
 
@@ -47,15 +59,40 @@ class Medusa_Scripts {
 
 		}
 
-		foreach ( $this->styles as $key => $style ) {
+		if ( $this->styles ) {
 
-			$handle	= ( $style['handle'] 	? $style['handle'] 	: false );
-			$src	= ( $style['src'] 		? $style['src'] 	: false );
-			$deps	= ( $style['deps'] 		? $style['deps'] 	: false );
-			$ver	= ( $style['ver'] 		? $style['ver'] 	: false );
-			$media	= ( $style['media'] 	? $style['media'] 	: false );
+			foreach ( $this->styles as $key => $style ) {
 
-			wp_enqueue_style( $handle, $src, $deps, $ver, $media );
+				$handle	= ( $style['handle'] 	? $style['handle'] 	: false );
+				$src	= ( $style['src'] 		? $style['src'] 	: false );
+				$deps	= ( $style['deps'] 		? $style['deps'] 	: false );
+				$ver	= ( $style['ver'] 		? $style['ver'] 	: false );
+				$media	= ( $style['media'] 	? $style['media'] 	: false );
+
+				wp_enqueue_style( $handle, $src, $deps, $ver, $media );
+
+			}
+
+		}
+
+	}
+
+
+	public function print_scripts() {
+
+		if ( $this->scripts ) {
+
+			foreach ( $this->scripts as $key => $script ) {
+
+				$handle		= ( $script['handle'] 		? $script['handle'] 	: false );
+				$src		= ( $script['src'] 			? $script['src'] 		: false );
+				$deps		= ( $script['deps'] 		? $script['deps'] 		: false );
+				$ver		= ( $script['ver'] 			? $script['ver'] 		: false );
+				$in_footer	= ( $script['in_footer'] 	? $script['in_footer'] 	: false );
+
+				wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
+
+			}
 
 		}
 

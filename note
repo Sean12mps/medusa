@@ -11,7 +11,8 @@ hooked actions:
 
 hooked filters:
 
-
+-	body_class
+	=	array( $css_class, 'update_body_class' )
 
 
 custom actions:
@@ -20,6 +21,9 @@ custom actions:
 
 -	medusa/scripts
 	scripts object before hooking into anything
+
+-	medusa/css_class
+	css_class object to modify element's classes of a page.
 
 
 custom filters:
@@ -30,9 +34,11 @@ custom filters:
 	whether to use main parent themes style or not
 
 -	medusa/scripts/styles
-	styles content elements ( title, metas, links, etc )
+	styles contents
 
+-	medusa/scripts/scripts
+	scripts contents
 
 
 @TODO:
--	add js scripts
+-	create site header area ( site title & image options ).

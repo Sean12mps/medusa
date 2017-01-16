@@ -1,10 +1,10 @@
 jQuery(window).load(function(){
 
-if ( $('.flexslider')[0] ) {
+if ( jQuery('.flexslider')[0] ) {
     jQuery('.flexslider').flexslider({
     animation: "fade",
     start: function(slider){
-var $container = $('#container'),
+var $container = jQuery('#container'),
           // object that will keep track of options
           isotopeOptions = {},
           // defaults, used if not explicitly set in hash
@@ -18,7 +18,7 @@ var $container = $('#container'),
     }
           };
 //$container.imagesLoaded( function(){
-									var colWidth = $('ul#container li').width();
+									var colWidth = jQuery('ul#container li').width();
 
       $container.isotope({
         itemSelector : '.element',
@@ -30,7 +30,7 @@ var $container = $('#container'),
   
 				
   
-      var $optionSets = $('#options').find('.option-set'),
+      var $optionSets = jQuery('#options').find('.option-set'),
           isOptionLinkClicked = false;
   
       // switches selected class on buttons
@@ -43,7 +43,7 @@ var $container = $('#container'),
   
   
 	$optionSets.find('a[href^="#filter"]').click(function(){
-        var $this = $(this);
+        var $this = jQuery(this);
         // don't proceed if already selected
         if ( $this.hasClass('selected') ) {
           return;
@@ -53,24 +53,24 @@ var $container = $('#container'),
         var href = $this.attr('href').replace( /^#/, '' ),
             // convert href into object
             // i.e. 'filter=.inner-transition' -> { filter: '.inner-transition' }
-            option = $.deparam( href, true );
+            option = jQuery.deparam( href, true );
         // apply new option to previous
-        $.extend( isotopeOptions, option );
+        jQuery.extend( isotopeOptions, option );
         // set hash, triggers hashchange on window
-        $.bbq.pushState( isotopeOptions );
+        jQuery.bbq.pushState( isotopeOptions );
         isOptionLinkClicked = true;
         return false;
       });
 
       var hashChanged = false;
 
-      $(window).bind( 'hashchange', function( event ){
+      jQuery(window).bind( 'hashchange', function( event ){
         // get options object from hash
-        var hashOptions = window.location.hash ? $.deparam.fragment( window.location.hash, true ) : {},
+        var hashOptions = window.location.hash ? jQuery.deparam.fragment( window.location.hash, true ) : {},
             // do not animate first call
             aniEngine = hashChanged ? 'best-available' : 'none',
             // apply defaults where no option was specified
-            options = $.extend( {}, defaultOptions, hashOptions, { animationEngine: aniEngine } );
+            options = jQuery.extend( {}, defaultOptions, hashOptions, { animationEngine: aniEngine } );
         // apply options from hash
         $container.isotope( options );
         // save options
@@ -86,7 +86,7 @@ var $container = $('#container'),
             hrefObj[ key ] = options[ key ];
             // convert object into parameter string
             // i.e. { filter: '.inner-transition' } -> 'filter=.inner-transition'
-            hrefValue = $.param( hrefObj );
+            hrefValue = jQuery.param( hrefObj );
             // get matching link
             $selectedLink = $optionSets.find('a[href="#' + hrefValue + '"]');
             changeSelectedLink( $selectedLink );
@@ -106,7 +106,7 @@ var $container = $('#container'),
 }
   });
 } else {
-	      var $container = $('#container'),
+	      var $container = jQuery('#container'),
           // object that will keep track of options
           isotopeOptions = {},
           // defaults, used if not explicitly set in hash
@@ -121,7 +121,7 @@ var $container = $('#container'),
           };
 //$container.imagesLoaded( function(){
 									
-									var colWidth = $('ul#container li').width();
+									var colWidth = jQuery('ul#container li').width();
 
       $container.isotope({
         itemSelector : '.element',
@@ -130,7 +130,7 @@ var $container = $('#container'),
       
     		  });
   
-      var $optionSets = $('#options').find('.option-set'),
+      var $optionSets = jQuery('#options').find('.option-set'),
           isOptionLinkClicked = false;
   
       // switches selected class on buttons
@@ -143,7 +143,7 @@ var $container = $('#container'),
   
   
 	$optionSets.find('a[href^="#filter"]').click(function(){
-        var $this = $(this);
+        var $this = jQuery(this);
         // don't proceed if already selected
         if ( $this.hasClass('selected') ) {
           return;
@@ -153,24 +153,24 @@ var $container = $('#container'),
         var href = $this.attr('href').replace( /^#/, '' ),
             // convert href into object
             // i.e. 'filter=.inner-transition' -> { filter: '.inner-transition' }
-            option = $.deparam( href, true );
+            option = jQuery.deparam( href, true );
         // apply new option to previous
-        $.extend( isotopeOptions, option );
+        jQuery.extend( isotopeOptions, option );
         // set hash, triggers hashchange on window
-        $.bbq.pushState( isotopeOptions );
+        jQuery.bbq.pushState( isotopeOptions );
         isOptionLinkClicked = true;
         return false;
       });
 
       var hashChanged = false;
 
-      $(window).bind( 'hashchange', function( event ){
+      jQuery(window).bind( 'hashchange', function( event ){
         // get options object from hash
-        var hashOptions = window.location.hash ? $.deparam.fragment( window.location.hash, true ) : {},
+        var hashOptions = window.location.hash ? jQuery.deparam.fragment( window.location.hash, true ) : {},
             // do not animate first call
             aniEngine = hashChanged ? 'best-available' : 'none',
             // apply defaults where no option was specified
-            options = $.extend( {}, defaultOptions, hashOptions, { animationEngine: aniEngine } );
+            options = jQuery.extend( {}, defaultOptions, hashOptions, { animationEngine: aniEngine } );
         // apply options from hash
         $container.isotope( options );
         // save options
@@ -186,7 +186,7 @@ var $container = $('#container'),
             hrefObj[ key ] = options[ key ];
             // convert object into parameter string
             // i.e. { filter: '.inner-transition' } -> 'filter=.inner-transition'
-            hrefValue = $.param( hrefObj );
+            hrefValue = jQuery.param( hrefObj );
             // get matching link
             $selectedLink = $optionSets.find('a[href="#' + hrefValue + '"]');
             changeSelectedLink( $selectedLink );
