@@ -15,7 +15,4 @@ require_once( 'hooks/header.php' );
 require_once( 'hooks/scripts.php' );
 require_once( 'hooks/css_class.php' );
 
-/*	TODO:
-	-	activate this theme
 	
- */
